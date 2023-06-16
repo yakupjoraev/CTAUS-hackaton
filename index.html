@@ -1,0 +1,624 @@
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ЦТУАС Хакатон VR camp 2022">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
+  <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ЦТУАС Хакатон</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__mobile">
+        <div class="nav__title"><a href="#">ЦТУАС</a></div>
+        <input class="nav__check" type="checkbox" id="nav__check" onclick="menu()" />
+        <label class="nav__hamb" for="nav__check"><span class="nav__hamb-line"></span></label>
+      </div>
+      <ul class="nav__menu">
+        <li class="nav__menu__item">
+          <a href="#about" onclick="checkboxOff()" class="nav__menu__link">О хакатоне</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="#cases" onclick="checkboxOff()" class="nav__menu__link">Кейсы</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="#old-camp" onclick="checkboxOff()" class="nav__menu__link">VR Camp 2022</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="#conditions" onclick="checkboxOff()" class="nav__menu__link">Условия</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="#experts" onclick="checkboxOff()" class="nav__menu__link">Эксперты</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="#contacts" onclick="checkboxOff()" class="nav__menu__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">
+        VR <span class="header__title__anticolor">camp</span>
+      </h1>
+      <div class="header__description">
+        Ты хочешь познакомиться с VR технологиями,
+        но тебе не хватает мотивации?
+        Тогда тебе сюда, кафедра ЦТУАС проводит
+        хакатон для новичков в области VR. Предложи
+        идею, разработай прототип, выступи с докладом
+        и получи приз. В этом тебе помогут наши эксперты!
+      </div>
+      <div class="header__date">
+        Даты с 22.06 по 21.07
+      </div>
+      <div class="header__bottom">
+        <!-- https://forms.gle/5d2ER9vkkzoc5trY7 target="_blank" -->
+        <a href="" class="header__button reg-button">Зарегистрироваться</a>
+        <ul class="header__social">
+          <li class="header__social__item">
+            <a href="https://vk.com/istvstu" target="_blank">
+              <img class="header__social__item__icon" src="img/vk.svg" />
+            </a>
+          </li>
+          <li class="header__social__item">
+            <img class="header__social__item__icon" src="img/marker.svg" />
+            Волгоград, Академическая ул., 1
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="main__whatis">
+        <h2 class="main__whatis__title">
+          <a name="about"></a>
+          Что такое VR camp
+        </h2>
+        <div class="main__whatis__description">
+          Хакатон VR Camp – ежегодное мероприятие, организованное кафедрой ЦТУАС совместно со Студенческим Научным
+          Обществом «Цифровой город». В течение двух или четырех недель ты вместе со своей командой можешь поработать
+          над одним из кейсов в области VR технологий: от проработки идеи до разработки прототипа, а помогут тебе в этом
+          наши эксперты. Если ты студент ИАиС, то тебе повезло, ты можешь воспользоваться нашей новой VR лабораторией.
+          Если ты студент другой образовательной организации, не расстраивайся, ты тоже можешь поучаствовать, используя
+          своё оборудование, а эксперты и защита пройдут дистанционно. Прокачай свои навыки в проектной деятельности,
+          проработай soft skills, проведи лето весело и с пользой!
+
+        </div>
+        <ul class="main__whatis__photos">
+          <li class="main__whatis__photos__item">
+            <img src="img/whatis_1.webp" alt="">
+          </li>
+          <li class="main__whatis__photos__item">
+            <img src="img/whatis_2.webp" alt="">
+          </li>
+          <li class="main__whatis__photos__item">
+            <img src="img/whatis_3.webp" alt="">
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__whatis" id="old-camp">
+        <h2 class="main__whatis__title">
+          <a name="about"></a>
+          VR Camp 2022
+        </h2>
+        <div class="slider">
+          <ul class="main__whatis__photos" data-slider-photos>
+            <li class="main__whatis__photos__item" data-slider-photos-item>
+              <img src="img/old-camp/old-camp-1.jpg" alt="">
+            </li>
+            <li class="main__whatis__photos__item" data-slider-photos-item>
+              <img src="img/old-camp/old-camp-2.jpg" alt="">
+            </li>
+            <li class="main__whatis__photos__item" data-slider-photos-item>
+              <img src="img/old-camp/old-camp-3.jpg" alt="">
+            </li>
+            <li class="main__whatis__photos__item" data-slider-photos-item>
+              <img src="img/old-camp/old-camp-4.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="main__whatwait">
+        <h2 class="main__whatwait__title">
+          Что вас ждет
+        </h2>
+        <ul class="main__whatwait__list">
+          <li class="main__whatwait__list__item">
+            <img src="img/whatwait_1.svg" alt="" class="main__whatwait__list__item__icon">
+            <h3 class="main__whatwait__list__item__title">
+              Опыт в сфере IT и VR технологий
+            </h3>
+            <!-- <div class="main__whatwait__list__item__description">
+                            Давно выяснено, что при оценке дизайна и 
+                            композиции читаемый текст мешает сосредоточиться. 
+                            Lorem Ipsum используют потому, что тот обеспечивает 
+                            более или менее стандартное заполнение шаблона, 
+                            а также реальное распределение букв и пробелов в 
+                            абзацах, которое не получается при простой дубликации 
+                            "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." 
+                            Многие программы электронной вёрстки
+                        </div> -->
+          </li>
+          <li class="main__whatwait__list__item">
+            <img src="img/whatwait_2.svg" alt="" class="main__whatwait__list__item__icon">
+            <h3 class="main__whatwait__list__item__title">
+              Общение с наставниками
+            </h3>
+            <!-- <div class="main__whatwait__list__item__description">
+                            Давно выяснено, что при оценке дизайна и 
+                            композиции читаемый текст мешает сосредоточиться. 
+                            Lorem Ipsum используют потому, что тот обеспечивает 
+                            более или менее стандартное заполнение шаблона, 
+                            а также реальное распределение букв и пробелов в 
+                            абзацах, которое не получается при простой дубликации 
+                            "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." 
+                            Многие программы электронной вёрстки
+                        </div> -->
+          </li>
+          <li class="main__whatwait__list__item">
+            <img src="img/whatwait_3.svg" alt="" class="main__whatwait__list__item__icon">
+            <h3 class="main__whatwait__list__item__title">
+              Возможность получить приз
+            </h3>
+            <!-- <div class="main__whatwait__list__item__description">
+                            Давно выяснено, что при оценке дизайна и 
+                            композиции читаемый текст мешает сосредоточиться. 
+                            Lorem Ipsum используют потому, что тот обеспечивает 
+                            более или менее стандартное заполнение шаблона, 
+                            а также реальное распределение букв и пробелов в 
+                            абзацах, которое не получается при простой дубликации 
+                            "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." 
+                            Многие программы электронной вёрстки
+                        </div> -->
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__prize">
+        <h2 class="main__prize__title">
+          Призовой фонд
+        </h2>
+        <div class="main__prize__description">
+          20 000р
+        </div>
+        <div class="main__prize__content">
+          <p class="main__prize__content__text">
+            Призовой фонд будет поделен в равных частях между треками.
+            <br><br>
+            Соотношение призового фонда трека 40% - Junior, 60% - Student
+          </p>
+          <img src="img/prize_bg.webp" class="main__prize__content__img">
+        </div>
+        <!-- <ul class="main__prize__top">
+                    <li class="main__prize__top__item">
+                        <h3 class="main__prize__top__item__title">Топы команд</h3>
+                        <div class="main__prize__top__item__description">Подзаголовок, в таком-то кейсе, условие</div>
+                    </li>
+                    <li class="main__prize__top__item">
+                        <h3 class="main__prize__top__item__title">Топы команд</h3>
+                        <div class="main__prize__top__item__description">Подзаголовок, в таком-то кейсе, условие</div>
+                    </li>
+                    <li class="main__prize__top__item">
+                        <h3 class="main__prize__top__item__title">Топы команд</h3>
+                        <div class="main__prize__top__item__description">Подзаголовок, в таком-то кейсе, условие</div>
+                    </li>
+                </ul> -->
+      </section>
+
+      <section class="main__forwhom">
+        <h2 class="main__forwhom__title">Для кого</h2>
+        <div class="main__forwhom__description">
+          Хакатон проводится в двух категориях <span class="main__forwhom__description__anticolor">командой от 2-х до
+            4-х человек</span>
+        </div>
+        <ul class="main__forwhom__teams">
+          <li class="main__forwhom__teams__item">
+            <div class="main__forwhom__teams__item__info">
+              <h3 class="main__forwhom__teams__item__info__title">Junior</h3>
+              <div class="main__forwhom__teams__item__info__description">
+                студенты первых курсов высших учебных заведений, студенты СПО, школьники
+              </div>
+            </div>
+            <div class="main__forwhom__teams__item__date">
+              с 27.06.22 по 06.07.22
+            </div>
+          </li>
+          <li class="main__forwhom__teams__item">
+            <div class="main__forwhom__teams__item__info">
+              <h3 class="main__forwhom__teams__item__info__title">Student</h3>
+              <div class="main__forwhom__teams__item__info__description">
+                студенты ВУЗов начиная со второго курса и старше
+              </div>
+            </div>
+            <div class="main__forwhom__teams__item__date">
+              с 27.06.22 по 15.07.2022
+            </div>
+          </li>
+          <li class="main__forwhom__teams__item">
+            <div class="main__forwhom__teams__item__info">
+              <h3 class="main__forwhom__teams__item__info__title">Что делать, если нет команды?</h3>
+              <div class="main__forwhom__teams__item__info__description">
+                <!-- "https://forms.gle/5d2ER9vkkzoc5trY7" target="_blank" -->
+                не проблема, укажи это при <a href=""
+                  class="main__forwhom__teams__item__info__description__link">регистрации</a> и мы поможем
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__case">
+        <h2 class="main__case__title">
+          <a name="cases"></a>
+          Треки
+        </h2>
+        <div class="main__case__cards">
+          <div class="main__case__cards__card">
+            <h3 class="main__case__cards__card__title">
+              Виртуальная реальность в образовании
+            </h3>
+            <div class="main__case__cards__card__description">
+              В рамках данного трека мы с вами попытаемся
+              сделать образовательный процесс более
+              современным и интересным. Картинки в
+              учебниках или стенды это хорошо, но,
+              наверное, каждый из нас задумывался о том:
+              «Вот если это можно было бы посмотреть
+              поближе и с разных сторон?», «А что если …?».
+              <br><br>
+              Подробности кейса в день открытия хакатона :)
+
+            </div>
+            <div class="main__case__cards__card__number">01</div>
+          </div>
+          <div class="main__case__cards__card">
+            <h3 class="main__case__cards__card__title">
+              Виртуальная реальность в урбанистике, архитектуре и строительстве
+            </h3>
+            <div class="main__case__cards__card__description">
+              Романтика есть в каждой профессии.
+              Видели ли Вы фото «Обед на набоскрёбе»?
+              <br><br>
+              Подробности кейса в день открытия хакатона :)
+            </div>
+            <div class="main__case__cards__card__number">02</div>
+          </div>
+          <div class="main__case__cards__card">
+            <h3 class="main__case__cards__card__title">
+              VR-игры
+            </h3>
+            <div class="main__case__cards__card__description">
+              Тут комментарии излишни :)
+              А как вы относитесь к громкой музыке?)
+              <br><br>
+              Подробности кейса в день открытия хакатона :)
+
+            </div>
+            <div class="main__case__cards__card__number">03</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__whatdo">
+        <h2 class="main__whatdo__title">
+          <a name="conditions"></a>
+          Что нужно делать
+        </h2>
+        <ul class="main__whatdo__todo">
+          <li class="main__whatdo__todo__item">
+            <img src="img/main_whatdo_1.svg" alt="" class="main__whatdo__todo__item__icon">
+            <div class="main__whatdo__todo__item__info">
+              <h3 class="main__whatdo__todo__item__info__title">
+                <!-- Регистрация -->
+                Зарегистрироваться
+              </h3>
+              <!-- <div class="main__whatdo__todo__item__info__description">
+                                Внести все свои данные: номер, емайл, ФИО и т.д.
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__whatdo__todo__item">
+            <img src="img/main_whatdo_2.svg" alt="" class="main__whatdo__todo__item__icon">
+            <div class="main__whatdo__todo__item__info">
+              <h3 class="main__whatdo__todo__item__info__title">
+                Выбрать кейс
+              </h3>
+              <!-- <div class="main__whatdo__todo__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона, а также реальное 
+                                распределение букв и пробелов в абзацах, которое не получается
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__whatdo__todo__item">
+            <img src="img/main_whatdo_3.svg" alt="" class="main__whatdo__todo__item__icon">
+            <div class="main__whatdo__todo__item__info">
+              <h3 class="main__whatdo__todo__item__info__title">
+                Сделать все за выделенное время
+              </h3>
+              <!-- <div class="main__whatdo__todo__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона, а также реальное 
+                                распределение букв и пробелов в абзацах, которое не получается
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__whatdo__todo__item">
+            <img src="img/main_whatdo_4.svg" alt="" class="main__whatdo__todo__item__icon">
+            <div class="main__whatdo__todo__item__info">
+              <h3 class="main__whatdo__todo__item__info__title">
+                Получить консультацию от экспертов
+              </h3>
+              <!-- <div class="main__whatdo__todo__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона, а также реальное 
+                                распределение букв и пробелов в абзацах, которое не получается
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__whatdo__todo__item">
+            <img src="img/main_whatdo_5.svg" alt="" class="main__whatdo__todo__item__icon">
+            <div class="main__whatdo__todo__item__info">
+              <h3 class="main__whatdo__todo__item__info__title">
+                Получить приз
+              </h3>
+              <!-- <div class="main__whatdo__todo__item__info__description">
+                                Внести все свои данные: номер, емайл, ФИО и т.д.
+                            </div> -->
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__experts">
+        <h2 class="main__experts__title">
+          <a name="experts"></a>
+          Эксперты и жюри
+        </h2>
+        <ul class="main__experts__peoples">
+          <li class="main__experts__peoples__item">
+            <img src="img/parygin.jpg" alt="" class="main__experts__peoples__item__photo">
+            <h3 class="main__experts__peoples__item__title">
+              Парыгин Данила Сергеевич
+            </h3>
+            <div class="main__experts__peoples__item__description">
+              Заведующий кафедрой ЦТУАС ИАиС ВолгГТУ
+            </div>
+          </li>
+          <li class="main__experts__peoples__item">
+            <img src="img/churakov.jpg" alt="" class="main__experts__peoples__item__photo">
+            <h3 class="main__experts__peoples__item__title">
+              Чураков Алексей Александрович
+            </h3>
+            <div class="main__experts__peoples__item__description">
+              Декан факультета дистанционного обучения,
+              доцент кафедры СКОиНС ИАиС ВолгГТУ
+            </div>
+          </li>
+          <li class="main__experts__peoples__item">
+            <img src="img/cupchikova1.jpeg" alt="" class="main__experts__peoples__item__photo">
+            <h3 class="main__experts__peoples__item__title">
+              Купчикова Наталья Викторовна
+            </h3>
+            <div class="main__experts__peoples__item__description">
+              Зав. кафедры "Экспертиза, эксплуатация и управление недвижимостью",
+              проректор по научной работе и международной деятельности
+              АГАСУ
+            </div>
+          </li>
+          <li class="main__experts__peoples__item">
+            <img src="img/rekunov.jpg" alt="" class="main__experts__peoples__item__photo">
+            <h3 class="main__experts__peoples__item__title">
+              Рекунов Сергей Сергеевич
+            </h3>
+            <div class="main__experts__peoples__item__description">
+              Доцент кафедры Строительная механика ИАиС ВолгГТУ,
+              заместитель декана факультета дистанционного обучения
+            </div>
+          </li>
+          <li class="main__experts__peoples__item">
+            <img src="img/sokolov.jpg" alt="" class="main__experts__peoples__item__photo">
+            <h3 class="main__experts__peoples__item__title">
+              Соколов Александр Александрович
+            </h3>
+            <div class="main__experts__peoples__item__description">
+              Доцент кафедры САПРиПК ВолгГТУ
+            </div>
+          </li>
+          <li class="main__experts__peoples__item">
+            <img src="img/rashevskiy.jpg" alt="" class="main__experts__peoples__item__photo">
+            <h3 class="main__experts__peoples__item__title">
+              Рашевский Николай Михайлович
+            </h3>
+            <div class="main__experts__peoples__item__description">
+              Доцент кафедры ЦТУАС ИАиС ВолгГТУ,
+              заместитель декана факультета дистанционного обучения
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__companies">
+        <h2 class="main__companies__title">
+          Партнеры
+        </h2>
+        <ul class="main__companies__list">
+          <li class="main__companies__list__item">
+            <a href="http://istvstu.ru/" target="_blank" class="main__companies__list__item__link">
+              <img src="img/ctuas_emblem.svg" alt="" class="main__companies__list__item__logo">
+            </a>
+          </li>
+          <li class="main__companies__list__item">
+            <a href="http://fdo-gorhoz.ru/" target="_blank" class="main__companies__list__item__link">
+              <img src="img/fdo_logo.png" alt="" class="main__companies__list__item__logo">
+            </a>
+          </li>
+          <li class="main__companies__list__item">
+            <a href="https://vgasu.ru/" target="_blank" class="main__companies__list__item__link">
+              <img src="img/iais_logo.jpg" alt="" class="main__companie__list__items__logo">
+            </a>
+          </li>
+          <li class="main__companies__list__item" id="prioritet">
+            <a href="https://priority2030.ru/" target="_blank" class="main__companies__list__item__link">
+              <img src="img/prioritet.svg" alt="" class="main__companies__list__item__logo">
+            </a>
+          </li>
+          <li class="main__companies__list__item">
+            <a href="https://www.rscf.ru/" target="_blank" class="main__companies__list__item__link">
+              <img src="img/rnf.svg" alt="" class="main__companies__list__item__logo">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__timeline">
+        <h2 class="main__timeline__title">
+          Таймлайн
+        </h2>
+        <ul class="main__timeline__list">
+          <li class="main__timeline__list__item">
+            <div class="main__timeline__list__item__number">01</div>
+            <div class="main__timeline__list__item__info">
+              Сбор заявок<br>с 14.06 – 21.06
+              <!-- <div class="main__timeline__list__item__info__title">
+                                Сбор заявок<br>с 28.04 - 29.05
+                            </div>
+                            <div class="main__timeline__list__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__timeline__list__item">
+            <div class="main__timeline__list__item__number">02</div>
+            <div class="main__timeline__list__item__info">
+              Старт хакатона<br>27.06
+              <!-- <div class="main__timeline__list__item__info__title">
+                                Сбор заявок<br>с 28.04 - 29.05
+                            </div>
+                            <div class="main__timeline__list__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__timeline__list__item">
+            <div class="main__timeline__list__item__number">03</div>
+            <div class="main__timeline__list__item__info">
+              Защита Junior<br>06.07
+              <!-- <div class="main__timeline__list__item__info__title">
+                                Сбор заявок<br>с 28.04 - 29.05
+                            </div>
+                            <div class="main__timeline__list__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__timeline__list__item">
+            <div class="main__timeline__list__item__number">04</div>
+            <div class="main__timeline__list__item__info">
+              Защита Student<br>15.07
+              <!-- <div class="main__timeline__list__item__info__title">
+                                Сбор заявок<br>с 28.04 - 29.05
+                            </div>
+                            <div class="main__timeline__list__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона
+                            </div> -->
+            </div>
+          </li>
+          <li class="main__timeline__list__item">
+            <div class="main__timeline__list__item__number">05</div>
+            <div class="main__timeline__list__item__info">
+              Объявление победителей и награждение<br>18.07
+              <!-- <div class="main__timeline__list__item__info__title">
+                                Сбор заявок<br>с 28.04 - 29.05
+                            </div>
+                            <div class="main__timeline__list__item__info__description">
+                                Давно выяснено, что при оценке дизайна и композиции 
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum 
+                                используют потому, что тот обеспечивает более или 
+                                менее стандартное заполнение шаблона
+                            </div> -->
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a name="contacts"></a>
+      <div class="">
+        <!-- https://forms.gle/5d2ER9vkkzoc5trY7 target="_blank" -->
+        <a href="" class="footer__button reg-button">Зарегистрироваться</a>
+      </div>
+      <a href="http://istvstu.ru/">
+        <img src="img/ctuas_emblem.svg" alt="" class="footer__emblem">
+      </a>
+      <h2 class="footer__title">
+        Остались вопросы?
+      </h2>
+      <div class="footer__number">
+        +7 (937) 730-19-13
+      </div>
+      <a href="https://vk.com/istvstu" target="_blank">
+        <img class="footer__icon" src="img/vk.svg" />
+      </a>
+    </div>
+  </footer>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <!— Yandex.Metrika counter —>
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+        m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(89194447, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      });
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/89194447" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!— /Yandex.Metrika counter —>
+</body>
+
+</html>
