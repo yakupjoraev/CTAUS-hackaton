@@ -453,6 +453,9 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .nav__menu__link {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -1285,4 +1288,91 @@ body ::-webkit-scrollbar-thumb {
   height: 100%;
   object-fit: cover;
   object-position: top;
+}
+
+.nav__menu__item svg {
+  transition: transform .3s linear;
+}
+
+.nav__menu__item:hover svg {
+  transform: rotate(180deg);
+}
+
+.nav__menu__item:hover .nav__menu-sublist {
+  height: 100%;
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.nav__menu__item:hover {}
+
+.nav__menu-sublist {
+  /* position: absolute; */
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: height .3s linear, opacity 0.3s linear;
+}
+
+.nav__menu-subitem {
+  line-height: 24px;
+}
+
+.nav__menu-sublink {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: .45em;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.nav__menu-sublink:hover {
+  color: #ff2377
+}
+
+.nav.scrolled__nav .nav__menu-sublink:hover {
+  color: #ff2377
+}
+
+
+.nav.scrolled__nav .nav__menu__item svg path {
+  fill: #000c32;
+}
+
+.nav.scrolled__nav .nav__menu-sublink {
+  color: #000c32;
+}
+
+
+@media screen and (max-width:1140px) {
+  .nav__menu-sublink {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #000c32;
+  }
+
+  .nav__menu-sublink:hover {
+    background-color: #afafaf;
+    color: #fff;
+  }
+
+  .nav__menu__item span svg {
+    display: none;
+  }
+
+  .nav__menu-sublist {
+    height: 100%;
+    opacity: 1;
+    pointer-events: visible;
+    padding-left: 1em;
+  }
 }
